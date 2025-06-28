@@ -9,16 +9,18 @@ pipeline{
                     """
                 }
             }
+        }
             stage('test'){
-            steps{
+                steps{
                 script{
                     sh """
                         echo "I am from test"
                     """
                 }
             }
+        }
             stage('deploy'){
-            steps{
+                steps{
                 script{
                     sh """
                         echo "I am from deploy"
